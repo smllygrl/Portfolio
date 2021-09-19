@@ -66,7 +66,17 @@
 .homebox {
   display: flex;
   flex-direction: column;
-  justify-items: flex-end;
-  align-items: flex-end;
-  border-top: 1px solid #d4dccd;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  border: 1px solid #d4dccd;
+  width: 500px;
+}
+.homebox__pitch {
+  color: #d4dccd;
+  padding: 0px;
+}
+.homebox__contact {
+  color: #d4dccd;
+  padding: 0px;
 }
