@@ -1,15 +1,17 @@
 * {
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #172815;
 }
 
 .navbar {
   display: flex;
   justify-content: right;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
 }
 
 .title {
-  border: 1px solid black;
   width: 60%;
 
   &__text {
@@ -17,6 +19,7 @@
     font-size: 200px;
     margin-top: 0px;
     margin-bottom: 0px;
+    color: #e56399;
   }
 
   &__subtitle {
@@ -24,20 +27,19 @@
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 0px;
+    color: #cfffb3;
   }
 }
 // footer can have it's own module when i am ready
 .footer {
   display: flex;
-  border-top: 1px solid black;
+  border-top: 1px solid #d4dccd;
   padding-top: 15px;
 
   &__flags {
     display: flex;
     flex-direction: row;
-    padding: 5px;
   }
-
   //   I can repeat the styling for all the flags... but how?!
   &__flag-pride {
     height: 50px;
@@ -61,8 +63,17 @@
     display: flex;
     padding: 10px;
     align-items: center;
-    border-left: 1px solid black;
+    border-left: 1px solid #d4dccd;
     font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
+    color: #d4dccd;
   }
+}
+
+.homebox {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  align-items: flex-end;
+  border-top: 1px solid #d4dccd;
 }
