@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  border-top: 1px solid #d4dccd;
+  padding-top: 15px;
+
+  &__flags {
+    display: flex;
+    flex-direction: row;
+  }
+  //   I can repeat the styling for all the flags... but how?!
+  &__flag-pride {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__flag-torres {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__flag-abor {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__text {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-left: 1px solid #d4dccd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color: #d4dccd;
+  }
+}

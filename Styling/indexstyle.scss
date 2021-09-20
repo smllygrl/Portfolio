@@ -1,3 +1,5 @@
+@use 'modules/footermod.scss';
+
 * {
   padding-left: 20px;
   padding-right: 20px;
@@ -17,56 +19,17 @@
   &__text {
     font-family: "Times New Roman", Times, serif;
     font-size: 200px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: #e56399;
+    padding: 0px;
+    margin: 0px;
   }
 
   &__subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: #cfffb3;
-  }
-}
-// footer can have it's own module when i am ready
-.footer {
-  display: flex;
-  border-top: 1px solid #d4dccd;
-  padding-top: 15px;
-
-  &__flags {
-    display: flex;
-    flex-direction: row;
-  }
-  //   I can repeat the styling for all the flags... but how?!
-  &__flag-pride {
-    height: 50px;
-    width: 80px;
-    padding: 5px;
-  }
-
-  &__flag-torres {
-    height: 50px;
-    width: 80px;
-    padding: 5px;
-  }
-
-  &__flag-abor {
-    height: 50px;
-    width: 80px;
-    padding: 5px;
-  }
-
-  &__text {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    border-left: 1px solid #d4dccd;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
-    color: #d4dccd;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -76,11 +39,13 @@
   justify-content: flex-end;
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
+
   border: 1px solid #d4dccd;
-  width: 500px;
+  border-radius: 15px;
 
   &__pitch {
     color: #d4dccd;
+
     padding: 0px;
   }
 
