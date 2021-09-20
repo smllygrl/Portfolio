@@ -1,4 +1,7 @@
 .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
   display: flex;
   border-top: 1px solid #d4dccd;
   padding-top: 15px;
@@ -32,17 +35,21 @@
   color: #d4dccd;
 }
 
-* {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #172815;
-}
-
 .navbar {
   display: flex;
   justify-content: right;
+  justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
+}
+
+* {
+  background-color: #172815;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .title {
