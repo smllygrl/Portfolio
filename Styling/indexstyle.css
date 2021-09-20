@@ -81,4 +81,14 @@
   padding: 0px;
 }
 
-/*# sourceMappingURL=indexstyle.css.map */
+.project {
+  display: flex;
+  border: 1px solid #d4dccd;
+  justify-content: space-around;
+}
+.project__image {
+  padding: 5px;
+}
+.project__details {
+  color: #d4dccd;
+}

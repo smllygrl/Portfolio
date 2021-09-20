@@ -54,3 +54,17 @@
     padding: 0px;
   }
 }
+
+.project {
+  display: flex;
+  border: 1px solid #d4dccd;
+  justify-content: space-around;
+
+  &__image {
+    padding: 5px;
+  }
+
+  &__details {
+    color: #d4dccd;
+  }
+}
