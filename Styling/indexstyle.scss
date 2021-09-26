@@ -1,17 +1,41 @@
-@use 'modules/footermod.scss';
-@use 'modules/navbar.scss';
+// @use "modules/footermod.scss";
+// @use 'modules/header__nav.scss';
 
 * {
   background-color: #172815;
 }
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 80px;
+  grid-template-areas:
+    ". . navbar"
+    "title title ."
+    "title title ."
+    "pitch . contact"
+    "footer footer footer";
+}
+
+.header {
+  display: flex;
+  grid-area: navbar;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  align-content: space-around;
+  justify-content: space-around;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .title {
   width: 60%;
+  grid-area: title;
 
   &__text {
     font-family: "Times New Roman", Times, serif;
@@ -30,26 +54,24 @@ body {
   }
 }
 
-.homebox {
+.pitch {
+  grid-area: pitch;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
+  padding: 0px;
+  border: solid 1px #cfffb3;
+}
 
-  border: 1px solid #d4dccd;
-  border-radius: 15px;
-
-  &__pitch {
-    color: #d4dccd;
-
-    padding: 0px;
-  }
-
-  &__contact {
-    color: #d4dccd;
-    padding: 0px;
-  }
+.contact {
+  grid-area: contact;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  padding: 0px;
+  border: solid 1px #cfffb3;
 }
 
 .project {
@@ -62,6 +84,48 @@ body {
   }
 
   &__details {
+    color: #d4dccd;
+  }
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  border-top: 1px solid #d4dccd;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__flags {
+    display: flex;
+    flex-direction: row;
+  }
+  //   I can repeat the styling for all the flags... but how?!
+  &__flag-pride {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__flag-torres {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__flag-abor {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  &__text {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-left: 1px solid #d4dccd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
     color: #d4dccd;
   }
 }
