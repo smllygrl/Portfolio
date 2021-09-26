@@ -14,8 +14,9 @@ body {
   grid-template-areas:
     ". . navbar"
     "title title ."
-    "title title ."
-    "pitch . contact"
+    ". project ."
+    "pitch project contact"
+    ". . ."
     "footer footer footer";
 }
 
@@ -76,15 +77,47 @@ body {
 
 .project {
   display: flex;
-  border: 1px solid #d4dccd;
   justify-content: space-around;
+  grid-area: project;
 
-  &__image {
-    padding: 5px;
+  &__title-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d4dccd;
+    padding-right: 50px;
+    border-right: solid 1px #d4dccd;
   }
 
   &__details {
     color: #d4dccd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.projectA {
+  display: flex;
+  justify-content: space-around;
+  grid-area: project;
+
+  &__title-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d4dccd;
+    padding-right: 50px;
+    border-right: solid 1px #d4dccd;
+  }
+
+  &__details {
+    color: #d4dccd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

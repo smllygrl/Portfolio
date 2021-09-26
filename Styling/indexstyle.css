@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr 1fr 1fr 80px;
-  grid-template-areas: ". . navbar" "title title ." "title title ." "pitch . contact" "footer footer footer";
+  grid-template-areas: ". . navbar" "title title ." ". project ." "pitch project contact" ". . ." "footer footer footer";
 }
 
 .header {
@@ -16,10 +16,12 @@ body {
   grid-area: navbar;
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
+  align-content: space-around;
   justify-content: space-around;
 }
 .header__navbar {
   display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -47,6 +49,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
   padding: 0px;
+  border: solid 1px #cfffb3;
 }
 
 .contact {
@@ -57,18 +60,49 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
   padding: 0px;
+  border: solid 1px #cfffb3;
 }
 
 .project {
   display: flex;
-  border: 1px solid #d4dccd;
   justify-content: space-around;
+  grid-area: project;
 }
-.project__image {
-  padding: 5px;
+.project__title-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d4dccd;
+  padding-right: 50px;
+  border-right: solid 1px #d4dccd;
 }
 .project__details {
   color: #d4dccd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectA {
+  display: flex;
+  justify-content: space-around;
+  grid-area: project;
+}
+.projectA__title-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d4dccd;
+  padding-right: 50px;
+  border-right: solid 1px #d4dccd;
+}
+.projectA__details {
+  color: #d4dccd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
