@@ -24,9 +24,12 @@ body {
   grid-area: navbar;
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
+  align-content: space-around;
   justify-content: space-around;
+
   &__navbar {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -54,10 +57,10 @@ body {
 .pitch {
   grid-area: pitch;
   display: flex;
-
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
   padding: 0px;
+  border: solid 1px #cfffb3;
 }
 
 .contact {
@@ -68,6 +71,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #cfffb3;
   padding: 0px;
+  border: solid 1px #cfffb3;
 }
 
 .project {
@@ -85,9 +89,6 @@ body {
 }
 
 .footer {
-  // position: fixed;
-  // width: 90%;
-  // bottom: 0px;
   grid-area: footer;
   display: flex;
   border-top: 1px solid #d4dccd;

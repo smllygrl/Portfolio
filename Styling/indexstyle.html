@@ -1,0 +1,113 @@
+* {
+  background-color: #172815;
+}
+
+body {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 80px;
+  grid-template-areas: ". . navbar" "title title ." "title title ." "pitch . contact" "footer footer footer";
+}
+
+.header {
+  display: flex;
+  grid-area: navbar;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  align-content: space-around;
+  justify-content: space-around;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 60%;
+  grid-area: title;
+}
+.title__text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200px;
+  color: #e56399;
+  padding: 0px;
+  margin: 0px;
+}
+.title__subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #cfffb3;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pitch {
+  grid-area: pitch;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  padding: 0px;
+  border: solid 1px #cfffb3;
+}
+
+.contact {
+  grid-area: contact;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfffb3;
+  padding: 0px;
+  border: solid 1px #cfffb3;
+}
+
+.project {
+  display: flex;
+  border: 1px solid #d4dccd;
+  justify-content: space-around;
+}
+.project__image {
+  padding: 5px;
+}
+.project__details {
+  color: #d4dccd;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  border-top: 1px solid #d4dccd;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer__flags {
+  display: flex;
+  flex-direction: row;
+}
+.footer__flag-pride {
+  height: 50px;
+  width: 80px;
+  padding: 5px;
+}
+.footer__flag-torres {
+  height: 50px;
+  width: 80px;
+  padding: 5px;
+}
+.footer__flag-abor {
+  height: 50px;
+  width: 80px;
+  padding: 5px;
+}
+.footer__text {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-left: 1px solid #d4dccd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  color: #d4dccd;
+}
