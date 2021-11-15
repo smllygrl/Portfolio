@@ -1,0 +1,213 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  margin-right: 50px;
+}
+.navBar :visited {
+  color: black;
+}
+.navBar :link {
+  color: black;
+}
+.navBar :hover {
+  text-decoration: line-through;
+}
+.navBar__link {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  font-size: 25px;
+}
+.navBar__btm {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.home {
+  height: 650px;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+}
+.home__title-top {
+  font-size: 200px;
+  margin: 0px;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 90px;
+}
+.home__title-btm {
+  font-size: 200px;
+  margin: 0px;
+  font-weight: 1;
+  font-stretch: expanded;
+  padding-left: 90px;
+}
+.home__subtitle {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  margin: 0px;
+  padding-left: 100px;
+  font-size: 40px;
+}
+
+.divider, .divider__last {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  margin-bottom: 20px;
+  width: 102%;
+  overflow: hidden;
+  height: 100px;
+  border: 1px transparent;
+}
+.divider__second {
+  background-image: radial-gradient(circle, #f0aa3e, #ff9468, #ff8899, #f78cc4, #cb99e1, #aca7f2, #89b4fa, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  width: 102%;
+  height: 100px;
+  overflow: hidden;
+  border: 1px transparent;
+  margin-bottom: 20px;
+}
+.divider__last {
+  margin-bottom: 100px;
+}
+
+.about {
+  margin-top: 150px;
+  border-bottom: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  padding: 15px;
+}
+.about__title {
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+.about__image {
+  height: 20px;
+  width: 20px;
+}
+
+.projectCont {
+  border-bottom: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid transparent;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.projectCont__title {
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  width: 140px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+.projectCont__allBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 25px;
+}
+.projectCont__box {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  padding: 15px;
+}
+.projectCont__box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+}
+.projectCont__box-left-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px;
+}
+.projectCont__box-left-image {
+  padding: 20px;
+}
+.projectCont__box-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.projectCont__link {
+  text-align: center;
+}
+.projectCont__link :visited {
+  color: black;
+}
+.projectCont__link :link {
+  color: black;
+}
+.projectCont__link :hover {
+  text-decoration: line-through;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 1px;
+  display: flex;
+  justify-items: center;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.footer__flags {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+}
+.footer__flag-size {
+  height: 50px;
+  width: 80px;
+  padding: 5px;
+}
+.footer__text {
+  display: flex;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+}
