@@ -8,6 +8,13 @@ We were also required to use SASS, and implement the block, elelemt and modifer 
 
 I have reiterated this project several times, and continue to refine this current version.
 
+The main learnings I have had during this project are --
++ Styling with flex box
++ Consolidated understanding of the box model
++ Working with coloured gradients
++ SCSS/CSS scope
++ How to link to other pages/ sections appropriately
+
 Items to be complete in my portfolio --
 + Media queries
 + Update pictures of my projects in their prospective links
