@@ -15,7 +15,7 @@ The main learnings I have had during this project are --
 + SCSS/CSS scope
 + How to link to other pages/ sections appropriately
 
-Items to be complete in my portfolio --
+Items to be refined in my portfolio --
 + Utilise Git branches with a develop & future feature branches
 + Media queries
 + Update pictures of my projects in their prospective links
