@@ -125,8 +125,6 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 15px;
   padding: 15px;
-  // align-items: center;
-  // justify-content: center;
   &__title {
     display: flex;
     font-size: larger;
@@ -186,9 +184,12 @@
   }
   &__box-left {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-left: 15px;
+    max-height: 100%;
+    width: 400px;
   }
   &__box-left-title {
     display: flex;
@@ -199,15 +200,33 @@
     border-radius: 7px;
     padding: 10px;
   }
+  &__box-left-image-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 333px;
+    width: 333px;
+  }
   &__box-left-image {
     padding: 20px;
+    max-width: 240px;
+    max-height: 240px;
   }
   &__box-right {
+    width: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 50px;
+  }
+  &__box-right-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
   }
   &__link {
     text-align: center;
